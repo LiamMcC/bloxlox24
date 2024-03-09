@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bloxlox: Revolutionising Wifi Security</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/main.css" />
+        <link rel="shortcut icon" href="/bloxloxfavicon.png" type="image/vnd.microsoft.icon" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            .menu-toggle {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+                cursor: pointer;
+            }
+            
+            .burger-icon {
+                width: 30px;
+                height: 28px;
+                background-color: #7b1fa2;
+                margin-bottom: 6px;
+                transition: transform 0.3s ease-in-out;
+                text-align: center;
+            
+            }
+            
+            .navigation-panel {
+                position: fixed;
+                top: 0;
+                right: -250px;
+                width: 250px;
+                height: 100%;
+                background-color: rgb(148, 80, 175);
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+                transition: right 0.3s ease-in-out;
+                z-index: 5000;
+            }
+            
+            .navigation-panel.active {
+                right: 0;
+            }
+            
+            .menu-items {
+                padding: 20px;
+            }
+            
+            .nav-button {
+                display: block;
+                width: 100%;
+                padding: 0px 0;
+                margin-bottom: 10px;
+                background-color: #7b1fa2;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+            }
+            
+            .nav-button:hover {
+                background-color: #da58a8;
+            }
+            
+            .close-button {
+                width: 100%;
+                font-size: 30px;
+                background-color: transparent;
+                border: none;
+                color: #000;
+                cursor: pointer;
+                margin-bottom: 0;
+            }
+
+            .cookie-policy {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(31, 30, 30);
+    position: fixed;
+    bottom: 0px;
+    right:auto;
+    width: 100%;
+    min-height: 10px;
+}
+
+.cookie-policy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cookie-policy a:hover {
+    text-decoration: underline;
+}
+                                    </style>
+    
+    </head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+		
+                    <%- include('../partials/largeheader') -%>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigationPanel = document.querySelector('.navigation-panel');
+
+    menuToggle.addEventListener('click', function() {
+        navigationPanel.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+});
+</script>
+
+
+                    
+
+                    <div class="menu-toggle">
+                        <div class="burger-icon"><i class="fa fa-bars"></i></div>
+                    </div>
+                    <div class="navigation-panel">
+                        
+                        <div class="menu-items">
+                           
+                            <a href="/" class="nav-button"><button class="nav-button">Home</button></a>
+                            <a href=" /bloxlox-features" class="nav-button"><button class="nav-button">Product Features</button></a>
+                            <a href="/how-bloxlox-works" class="nav-button"><button class="nav-button">How It Works</button></a>
+                            <a href="/bloxlox-benifits" class="nav-button"><button class="nav-button">Benefits </button></a>
+                            <a href="/bloxlox-patents" class="nav-button"><button class="nav-button">Patents and Technology</button></a>
+                            <a href="/bloxlox-usecase" class="nav-button"><button class="nav-button">Use Cases</button></a>
+                            <a href="/contact" class="nav-button"><button class="nav-button">Contact Us</button></a>
+                            <a href="/partherships" class="nav-button"><button class="nav-button">Partnerships</button></a>
+                            <a href="/bloxlox-privacy" class="nav-button"><button class="nav-button">Privacy Policy</button></a>
+                        </div>
+                    </div>
+
+				
